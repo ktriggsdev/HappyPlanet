@@ -26,9 +26,11 @@ if 'generated' not in st.session_state:
 if 'past' not in st.session_state:
     st.session_state['past'] = ['Hi!']
 
-input_container = st.container()
-colored_header(label='', description='', color_name='blue-30')
+
+
 response_container = st.container()
+colored_header(label='', description='', color_name='blue-30')
+input_container = st.container()
 
 # User input
 ## Function for taking user provided prompt as input
