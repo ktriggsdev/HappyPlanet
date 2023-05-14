@@ -3,7 +3,9 @@ from streamlit_chat import message
 from streamlit_extras.colored_header import colored_header
 from streamlit_extras.add_vertical_space import add_vertical_space
 from hugchat import hugchat as happyplanet
+from datasets import load_dataset
 
+dataset = load_dataset("empathetic_dialogues")
 st.set_page_config(page_title="Happy Planet - An LLM-powered Streamlit app")
 
 with st.sidebar:
